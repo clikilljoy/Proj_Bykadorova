@@ -9,9 +9,9 @@ while type (a) != int:  #проверка числа
             a = int (a)
       except:
             print("Неправильно ввели число")
-            a = input ("Введите a ")
+            a = input ("Введите число ")
 
-if a % 2 == 0:
-      print ("Чётное")
+if not a % 2:
+      print ("True")
 else:
-      print("Не чётное")
+      print("False")

@@ -23,9 +23,6 @@ def calculate_discount(buy):
     elif 1500 <= buy < 2000:
         discount = 0.05
 
-    else:
-        discount = 0
-
     return discount * 100
     
 buy_spent = input("Введите сумму покупки: ")
