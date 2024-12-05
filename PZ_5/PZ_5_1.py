@@ -11,12 +11,11 @@ def proverka_int(x):   # Проверка числа
             print('Вы ввели число не правильно')
             x = input('Повторите попытку: ')
 
-def sum_digith(x):
-    k = 0
-    for i in str(x):
-        k += int(i)
-    return k
+def sum_rad(x):
+    i = 0
+    while x != 0:
+        i += x % 10
+        x = x // 10
+    return i
 
-a = input('Введите числовой ряд: ')
-a = proverka_int(a)
-print(sum_digith(a))
+print(sum_rad(int(input("Введите числовой ряд: "))))
